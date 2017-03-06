@@ -99,7 +99,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     {
         Height = Float(heightTextField.text!)!
         Weight = Float(weightTextField.text!)!
-        BMI = Weight/Height/Height*Key
+        BMI = Weight/Height/Height*1/Key
         switch BMI {
         case 0...16.0:
             displayLabel.text = (Display as String) + " Severe Thinness"
